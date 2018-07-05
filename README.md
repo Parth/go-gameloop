@@ -15,7 +15,7 @@ go get github.com/parthmehrotra/go-gameloop
 package main
 
 import (
-	"github.com/kutase/go-gameloop"
+	"github.com/parthmehrotra/go-gameloop"
 	"log"
 )
 
