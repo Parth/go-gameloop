@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-go get github.com/kutase/go-gameloop
+go get github.com/parthmehrotra/go-gameloop
 ```
 ## Example
 
