@@ -9,6 +9,11 @@
 ```bash
 go get github.com/parthmehrotra/go-gameloop
 ```
+
+## TODO
+
+Add explanation for what the 10 argument means. I had to check, other people will likely have to as well
+
 ## Example
 
 ```go
