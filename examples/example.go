@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// 10 represents calls per second to the function
 	gl := gameLoop.New(10, func(delta float64) {
 		log.Println("tick:", delta)
 	})
