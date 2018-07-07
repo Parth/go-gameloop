@@ -8,7 +8,7 @@ import (
 type GameLoop struct {
 	onUpdate func(float64)
 	tickRate time.Duration
-	Started  bool
+	Running  bool
 	quit     chan bool
 }
 
@@ -18,7 +18,7 @@ func New(tickRate time.Duration, onUpdate func(float64)) *GameLoop {
 		onUpdate: onUpdate,
 		tickRate: tickRate,
 		quit:     make(chan bool),
-		Started:  false,
+		Running:  false,
 	}
 }
 
@@ -63,12 +63,13 @@ func (gl *GameLoop) SetOnUpdate(onUpdate func(float64)) {
 
 // Start game loop
 func (gl *GameLoop) Start() {
-	gl.Started = false
+	gl.Running = true
 	go gl.startLoop()
 }
 
 // Stop game loop
 func (gl *GameLoop) Stop() {
+	gl.Running = false
 	gl.quit <- true
 }
 
