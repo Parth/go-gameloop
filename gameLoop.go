@@ -8,7 +8,7 @@ import (
 type GameLoop struct {
 	onUpdate func(float64)
 	tickRate time.Duration
-	started  bool
+	Started  bool
 	quit     chan bool
 }
 
