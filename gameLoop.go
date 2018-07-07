@@ -18,7 +18,7 @@ func New(tickRate time.Duration, onUpdate func(float64)) *GameLoop {
 		onUpdate: onUpdate,
 		tickRate: tickRate,
 		quit:     make(chan bool),
-		started:  false,
+		Started:  false,
 	}
 }
 
