@@ -63,7 +63,7 @@ func (gl *GameLoop) SetOnUpdate(onUpdate func(float64)) {
 
 // Start game loop
 func (gl *GameLoop) Start() {
-	gl.Started = false
+	gl.Started = true
 	go gl.startLoop()
 }
 
